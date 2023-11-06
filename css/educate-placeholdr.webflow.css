@@ -1,3 +1,7 @@
+#protagonist{
+  display: none;
+}
+
 
 .d-none{
   display: none !important;
@@ -20,6 +24,10 @@
 @media screen and (max-width: 480px){
   #prijava-button{
     padding: 20px 100px !important;
+  }
+
+  #second-gif{
+    padding-top: 0px;
   }
 }
 
@@ -1286,7 +1294,8 @@
   }
   
   .section-2.thin-section {
-    background-image: radial-gradient(circle, #02c6c3, #006bff 33%, rgba(0, 107, 255, 0));
+    /*background-image: radial-gradient(circle, #02c6c3, #006bff 33%, rgba(0, 107, 255, 0));*/
+    background-image:radial-gradient(circle, #FFFFFF, #FFFFFF50 33%, rgba(0, 107, 255, 0));
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 1px;
