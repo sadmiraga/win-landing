@@ -5,6 +5,14 @@
     <head>
         <meta charset="utf-8">
         <title>WIN association</title>
+
+        <!-- Flickity -->
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <meta content="Webflow" name="generator">
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -42,9 +50,11 @@
     <body class="body">
         <div data-w-id="7f52039d-b6ce-92e5-0447-48de59729947" class="section-2 thin-section less-space-below"></div>
 
+
         <!-- HEADER -->
         <div class="header less-margin-top">
 
+            <!-- LOGO -->
             <div class="hero">
                 <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" data-easing="ease" data-easing2="ease" role="banner" class="nav w-nav">
                     <div class="nav-inner">
@@ -57,14 +67,15 @@
                 </div>
             </div>
 
+            <!-- hero section -->
             <div class="container-flex">
                 <h1 class="hero-h1 smaller" style="text-align:center;width:100%;max-width: 100%;"> Your network is your networth </h1>
                 <p class="hero-paragraph"> Si povprečje 5 ljudi s katerim preživiš največ časa. Naše poslanstvo je, da vas obkrožimo z najboljšimi. </p>
-                <img src="https://i.ibb.co/6DxYp4L/banner.jpg" style="border-radius:20px;">
+                <img src="images/banner.webp" style="border-radius:20px;">
                 <div class="hero-image-wrapper"></div>
             </div>
             <a href="#prijava-button" data-w-id="590dc43f-72e9-442f-5c9a-deb93a106e58" class="button-join w-button">
-                <strong class="bold-text-18">Oddaj prijavo</strong>
+                <strong class="bold-text-18">Prijavi se</strong>
             </a>
             <div class="profile-images-wrapper">
                 <img src="images/people2x.png" width="80" alt="" class="people-group-image">
@@ -120,7 +131,10 @@
                             <h2 class="h2-2">
                                 Mastermind
                             </h2>
-                            <p class="paragraph-47">Vsak mesec deli svoje ideje, poglede in težave z drugimi v skupini. Ne prepusti naključjem ljudi s katerimi se družiš. </p>
+                            <ul>
+                                <li class="paragraph-47">Obkroži se z uspešnimi posamezniki</li>
+                                <li class="paragraph-47">Deli svoje ideje</li>
+                            </ul>
                         </div>
                         <div class="centre_block-3">
                             <div class="centre_icon_wrap-3">
@@ -173,44 +187,92 @@
 
         <!-- sponsors -->
         <h1 class="h1-3 mt-60">Sponzorji</h1>
-        <section class="features-section-4" id="sponsors">
 
+        <div id="mobile-sponsors" class="main-carousel w-100" data-flickity='{ "cellAlign": "center", "contain": true, "wrapAround": true, "groupCells": 3,"autoPlay": true}'>
+
+            <!-- LUI -->
+            <div class="carousel-cell">
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                    <a class="w-auto" target="_blank" href="https://www.lui.si/">
+                        <img src="images/sponsors/lui.webp" class="avatar avatar-ex-sm client-logo" alt="LUI logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4ENDURANCE -->
+            <div class="carousel-cell">
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                    <a class="w-auto" target="_blank" href="https://ypsilon.si/" >
+                        <img src="images/sponsors/4endurance.png" alt="Zavod Y logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- REDBULL -->
+            <div class="carousel-cell">
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                    <a class="w-auto" target="_blank" href="https://www.redbull.com/si-sl/">
+                        <img src="images/sponsors/redbull.webp" class="avatar avatar-ex-sm client-logo" alt="Redbull logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- YPISOL -->
+            <div class="carousel-cell">                   
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                    <a class="w-auto" target="_blank" href="https://ypsilon.si/" >
+                        <img src="images/sponsors/zavod-y.webp" alt="Zavod Y logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- VIZIR -->
+            <div class="carousel-cell">
+                <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                    <a class="w-auto" target="_blank" href="https://vizir.si/">
+                        <img src="images/sponsors/vizir.webp" class="avatar avatar-ex-sm client-logo" alt="Vizir logo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="features-section-4" id="sponsors">
             <div class="section_container-2">
                 <div class="row justify-content-center sponsors-row" >
 
                     <!-- LUI -->
                     <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
-
                         <a class="w-auto" target="_blank" href="https://www.lui.si/">
-                            <img src="https://www.lui.si/images/logo-lui-white.png" class="avatar avatar-ex-sm client-logo"
-                                alt="LUI logo">
+                            <img src="images/sponsors/lui.webp" class="avatar avatar-ex-sm client-logo" alt="LUI logo">
+                        </a>
+                    </div>
+
+                    <!-- 4ENDURANCE -->
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                        <a class="w-auto" target="_blank" href="https://ypsilon.si/" >
+                            <img src="images/sponsors/4endurance.png" alt="Zavod Y logo">
+                        </a>
+                    </div>
+
+                    <!-- REDBULL -->
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                        <a class="w-auto" target="_blank" href="https://www.redbull.com/si-sl/">
+                            <img src="images/sponsors/redbull.webp" class="avatar avatar-ex-sm client-logo" alt="Redbull logo">
+                        </a>
+                    </div>
+                    
+                    <!-- YPISOL -->
+                    <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
+                        <a class="w-auto" target="_blank" href="https://ypsilon.si/" >
+                            <img src="images/sponsors/zavod-y.webp" alt="Zavod Y logo">
                         </a>
                     </div>
 
                     <!-- VIZIR -->
                     <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
-
                         <a class="w-auto" target="_blank" href="https://vizir.si/">
-                            <img src="https://vizir.si/wp-content/uploads/2020/11/pivovarna-vizir-logo-80px.svg" class="avatar avatar-ex-sm client-logo"
-                                alt="Vizir logo">
-                        </a>
-                    </div>
-
-                    <!-- REDBULL -->
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
-
-                        <a class="w-auto" target="_blank" href="https://www.redbull.com/si-sl/">
-                            <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg" class="avatar avatar-ex-sm client-logo"
-                                alt="Redbull logo">
-                        </a>
-                    </div>
-
-                    <!-- REDBULL -->
-                    <div class="col-lg-2 col-md-2 col-6 text-center py-4 client-cell">
-                        <a class="w-auto" target="_blank" href="https://ypsilon.si/" >
-                            <img src="https://i.ibb.co/9cCQcPG/BIIIIG.png"
-                                style="height: 70px !important;"
-                                alt="Zavod Y logo">
+                            <img src="images/sponsors/vizir.webp" class="avatar avatar-ex-sm client-logo" alt="Vizir logo">
                         </a>
                     </div>
 
@@ -457,9 +519,6 @@
 
             </div>
         </section>
-        
-
-
 
         <!-- testimonials GUESTS -->
         <div class="section-2">
@@ -690,13 +749,13 @@
 
         <div data-w-id="b7f6ef0e-2a5d-127d-ee3f-c98b8228fc0a" class="section-2 thin-section"></div>
         <div class="footer" style="border-top: none !important;">
-            <div class="wrap" style="background-color: black;">
+            <div class="wrap" style="background-color: transparent;">
                 
                 <a style="text-align:center;" aria-current='page' class='brand w-nav-brand w--current' href='/'>
                     <h2>WIN</h2>
                 </a>
                 
-                <div class="footer-list">
+                <div class="footer-list d-none">
                     <a class='footer-link' href='/privacy-policy'>Privacy Policy</a>
                     <a class='footer-link' href='/terms-conditions'>Terms &amp;Conditions</a>
                     <a class='footer-link' href='/acceptable-use-policy'>Acceptable Use</a>
