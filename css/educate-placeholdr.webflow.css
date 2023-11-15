@@ -1,4 +1,6 @@
-
+.text-center{
+  text-align: center !important;
+}
 
 .flickity-page-dots .dot{
   background: white;
