@@ -2381,7 +2381,7 @@
   
   .f-feature-card-outlined {
     height: 100%;
-    background-color: #fff;
+    background-color: black;
     border: 1px solid #f3f5fb;
     border-radius: 12px;
     flex-direction: column;
@@ -2389,6 +2389,14 @@
     padding: 40px;
     transition: all .2s ease-in-out;
     display: flex;
+  }
+
+  .f-feature-card-outlined .f-paragraph-large-5{
+    color: #b8b7b7;
+  }
+
+  .f-feature-card-outlined .f-h5-heading-5{
+    color: white;
   }
   
   .f-feature-card-outlined:hover {
