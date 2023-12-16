@@ -2,9 +2,21 @@
 <!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Thu Sep 14 2023 16:18:46 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="649af65455ed317c59aa236b" data-wf-site="649af65455ed317c59aa22a3">
+    
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <title>WIN association</title>
+
+        <meta property="og:title" content="WIN association" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://win-association.com/" />
+        <meta property="og:image" content="/images/banner.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1000" />
+        <meta property="og:image:height" content="600" />
+
+        <meta property="og:locale" content="si" />
 
         <!-- Flickity -->
         <!-- CSS -->
@@ -418,6 +430,27 @@
                             <div class="w-layout-grid grid-6 _6-design">
                                 <div id="w-node-_6afd13aa-62c3-57a1-8897-d2a5b11203f8-59aa236b">
                                     <div id="w-node-_6afd13aa-62c3-57a1-8897-d2a5b11203f9-59aa236b" data-w-id="6afd13aa-62c3-57a1-8897-d2a5b11203f9" style="opacity:0" class="div-block-58">
+
+                                        <video id="coctail-video"  height="360" poster="images/video-banner.png" >
+                                            <source src="videos/party.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+
+                                        <script>
+                                            var video = document.getElementById('coctail-video');
+                                            video.volume = 0.25;
+                                    
+                                            // Play video on poster click
+                                            video.addEventListener('click', function() {
+                                                video.play();
+                                            });
+                                    
+                                            // When the video starts playing, show the controls
+                                            video.addEventListener('play', function() {
+                                                video.controls = true;
+                                            });
+                                        </script>
+
                                         <div class="div-block-68">
                                             <h3 class="course-name">Business Cocktail parties</h3>
                                             <img src="https://uploads-ssl.webflow.com/64b0a411d687ebf689546f04/64b0bb33bfa43fcb05b1348f_verificado.png" loading="lazy" alt="" class="image-51">
@@ -426,10 +459,12 @@
                                             Kot član združenja WIN imaš ekskluzivni dostop do poslovnih koktajl zabav. Ti dogodki so idealni za spoznavanje in izmenjavo idej z drugimi podjetniki in strokovnjaki iz različnih panog.
                                     </div>
                                 </div>
-                                <img src="/images/package/party.webp" loading="lazy" style="opacity:0;border-radius:20px;" width="1000" alt="" id="w-node-_6afd13aa-62c3-57a1-8897-d2a5b1120400-59aa236b" data-w-id="6afd13aa-62c3-57a1-8897-d2a5b1120400" class="image-32 box-shadow">
+                                <img id="coctail-image" class="image-32 box-shadow" src="/images/package/party.webp" loading="lazy" style="opacity:0;border-radius:20px;" width="1000" alt="" id="w-node-_6afd13aa-62c3-57a1-8897-d2a5b1120400-59aa236b" data-w-id="6afd13aa-62c3-57a1-8897-d2a5b1120400">
+                                
                             </div>
                         </div>
                     </div>
+
                 
                     <!-- video arhiv -->
                     <div class="separator-div">

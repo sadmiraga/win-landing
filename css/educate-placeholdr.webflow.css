@@ -1,3 +1,25 @@
+/*coctail party */
+#coctail-video{
+  display: none;
+  border-radius: 15px;
+  width: 100%;
+}
+
+#coctail-video:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+  #coctail-video{
+    display: block;
+  } 
+
+  #coctail-image{
+    display: none;
+  }
+}
+
+
 .text-center{
   text-align: center !important;
 }
