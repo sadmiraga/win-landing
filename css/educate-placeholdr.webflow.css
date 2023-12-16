@@ -449,6 +449,9 @@
     padding-top: 0;
     padding-bottom: 0;
     display: flex;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
   }
   
   .body {
