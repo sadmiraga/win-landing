@@ -1,3 +1,9 @@
+/*  arrow buttons */
+.flickity-button{
+  top: 13rem !important;
+}
+
+
 /*coctail party */
 #coctail-video{
   display: none;
