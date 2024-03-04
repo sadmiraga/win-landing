@@ -17,13 +17,14 @@
   background: white;
   border-radius: 7px !important;
   width: 30px;
-  height: 30px;
+  height: 30px !important;
   border: 0.3px solid white;
 }
 
 .testimonials-container .f-feature-card-outlined .website-icon{
   border-radius: 20px !important;
     width: 35px !important;
+    height: 35px !important;
     border-radius: 20px !important;
     border: 0.3px solid white;
     background: white;
