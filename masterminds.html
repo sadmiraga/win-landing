@@ -260,13 +260,17 @@ img {
 .card-content {
   position: relative;
   height: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 1rem;
   overflow: hidden;
   background: linear-gradient(to bottom right, #ffffff, #f9fafb);
   border: 1px solid #f3f4f6;
   transition: all 0.3s ease-out;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
@@ -281,41 +285,31 @@ img {
 }
 
 .card-emoji {
-  display: block;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  transform-origin: center left;
-  transition: transform 0.3s ease-out;
-}
-
-.card-content:hover .card-emoji {
-  transform: scale(1.1);
 }
 
 .card-content h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.card-content p {
-  color: #6b7280;
-  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
 }
 
 .card-link {
-  display: inline-flex;
-  align-items: center;
-  font-size: 0.875rem;
-  font-weight: 500;
+  text-align: center;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #e5e7eb;
 }
 
-.card-link svg {
-  margin-left: 0.5rem;
-  transition: transform 0.3s ease-out;
-}
-
-.card-content:hover .card-link svg {
-  transform: translateX(4px);
+.card-link:hover {
+  background-color: #e5e7eb;
+  transform: translateY(-2px);
 }
 
 .card-content::after {
@@ -651,26 +645,16 @@ footer {
     margin-top: 3rem;">
   </div>
 
-    <div class="hero-section">
-      <div class="hero-content">
-        <div class="scroll-indicator">
-          <a href="#mastermind-groups" aria-label="Scroll down">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
+
     
     <main>
       <!-- Mastermind Cards Section -->
       <section id="mastermind-groups" class="mastermind-section">
         <div class="container">
           <div class="section-header reveal">
-            <span class="badge">Exclusive Communities</span>
-            <h2>Mastermind Groups</h2>
-            <p>
+            <span class="badge">🟢 open invitation</span>
+            
+            <p style="display: none;">
               Join specialized mastermind groups tailored to your specific business needs and growth objectives.
             </p>
           </div>
@@ -681,12 +665,8 @@ footer {
                 <div class="card-content">
                   <span class="card-emoji">🛒</span>
                   <h3>E-commerce Mastermind</h3>
-                  <p>Connect with ambitious e-commerce entrepreneurs to master marketing, scaling, and conversion strategies. Share real-world tactics and stay ahead of the competition.</p>
                   <div class="card-link">
-                    <span>👉 Join the network</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
@@ -697,12 +677,8 @@ footer {
                 <div class="card-content">
                   <span class="card-emoji">📈</span>
                   <h3>Investing Mastermind</h3>
-                  <p>Exchange insights with experienced investors, refine your portfolio strategies, and explore new wealth-building opportunities in a trusted community.</p>
                   <div class="card-link">
-                    <span>👉 Invest smarter</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
@@ -713,12 +689,8 @@ footer {
                 <div class="card-content">
                   <span class="card-emoji">🤖</span>
                   <h3>AI Mastermind</h3>
-                  <p>Collaborate with AI innovators to stay ahead of cutting-edge developments, implementation strategies, and industry trends that shape the future.</p>
                   <div class="card-link">
-                    <span>👉 Dive into AI</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
@@ -729,12 +701,8 @@ footer {
                 <div class="card-content">
                   <span class="card-emoji">💰</span>
                   <h3>Sales Mastermind</h3>
-                  <p>Learn from elite closers, refine your pitch, and master high-ticket sales strategies to boost revenue and build long-term client relationships.</p>
                   <div class="card-link">
-                    <span>👉 Master sales</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
@@ -745,28 +713,20 @@ footer {
                 <div class="card-content">
                   <span class="card-emoji">💻</span>
                   <h3>Developer Mastermind</h3>
-                  <p>Join a network of top developers to share coding insights, discuss best practices, and stay ahead of the latest tech trends and innovations.</p>
                   <div class="card-link">
-                    <span>👉 Code with the best</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
             </div>
             
             <div class="mastermind-card stagger-item" data-index="5">
-              <a href="https://win-association.notion.site/Digital-product-mastermind-1926eb72f86b80d8b323ebb72466d972?pvs=4" target="_blank" rel="noopener noreferrer">
+              <a href="https://win-association.com/" target="_blank" rel="noopener noreferrer">
                 <div class="card-content">
-                  <span class="card-emoji">📦</span>
-                  <h3>Digital Products Mastermind</h3>
-                  <p>Brainstorm, refine, and scale digital products with experienced creators. Learn proven frameworks and execution strategies to turn ideas into thriving businesses.</p>
+                  <span class="card-emoji">💼</span>
+                  <h3>Business Mastermind</h3>
                   <div class="card-link">
-                    <span>👉 Build better products</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
+                    <span>👉 Apply now</span>
                   </div>
                 </div>
               </a>
